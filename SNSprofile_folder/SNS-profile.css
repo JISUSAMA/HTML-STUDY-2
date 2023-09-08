@@ -1,0 +1,16 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  background: #f7f9fc;
+}
+.layout_grup_back {
+  /* position: absolute; */
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px 1px #eee;
+}
+.layout_grup {
+  background-color: white;
+  width: 90%;
+}

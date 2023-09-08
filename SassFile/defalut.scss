@@ -1,0 +1,19 @@
+//기본 셋팅 값
+body {
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+
+%box-size {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+@mixin box_size($W, $H, $P, $size) {
+  #{$W}: 300px;
+  height: $H;
+  padding: $P;
+  background-color: $size;
+}

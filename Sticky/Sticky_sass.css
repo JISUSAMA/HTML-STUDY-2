@@ -1,0 +1,17 @@
+.gray {
+  background-color: lightgray;
+  height: 2000px;
+  margin-top: 500px;
+}
+
+.img {
+  float: right;
+  width: 400px;
+  position: sticky;
+  top: 100px;
+}
+
+.text {
+  float: left;
+  width: 300px;
+}/*# sourceMappingURL=Sticky_sass.css.map */

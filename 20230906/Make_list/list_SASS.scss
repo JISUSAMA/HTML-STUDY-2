@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+ul {
+  padding: 10px;
+}
+
+@mixin list-bg-value() {
+  width: 350px;
+  height: 50px;
+  padding: 0px 0;
+}
+@mixin make_padding($top, $bottom, $left, $right) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+  padding-left: $left;
+  padding-right: $right;
+}
+.list-bg {
+  .list-item {
+    @include list-bg-value();
+    border: 1px solid rgb(165, 165, 165);
+  }
+  .text-aline {
+    @include make_padding(10px, 10px, 10px, 0px);
+    font-size: large;
+    font-weight: bold;
+  }
+  .list-item-active .list-item :active {
+    @include list-bg-value();
+    background-color: steelblue;
+    @include make_padding(10px, 10px, 10px, 0px);
+    color: white;
+  }
+}

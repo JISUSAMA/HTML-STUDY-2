@@ -1,0 +1,26 @@
+@mixin containerCR($C, $R) {
+  display: grid;
+  grid-template-columns: $C;
+  grid-template-rows: $R;
+}
+.grid-container {
+  //   @include container();
+  @include containerCR(1fr 1fr 1fr, 1fr 1fr 1fr);
+  .grid-item-1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+}
+.grid-container img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 300px) {
+  .grid-container {
+    @include containerCR(1fr, 1fr);
+    .grid-item-1 {
+      grid-column: 1/1;
+      grid-row: 1/1;
+    }
+  }
+}

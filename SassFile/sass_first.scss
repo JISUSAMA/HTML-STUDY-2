@@ -1,0 +1,56 @@
+$base_c: rgb(149, 131, 167);
+
+// h1 {
+//   background-color: $base_c;
+// }
+
+// .col-bg h1 {
+//   font-size: 16px;
+// }
+// .col-bg button {
+//   color: aquamarine;
+// }
+
+// .col-bg {
+//   h1 {
+//     font-size: 16px;
+//   }
+//   button {
+//     color: aquamarine;
+//   }
+// }
+// %btn-style {
+//   width: 100px;
+//   height: 100px;
+//   padding: 20px;
+// }
+// .btn-aquamarine {
+//   @extend %btn-style;
+//   color: aquamarine;
+// }
+// .btn-red {
+//   @extend %btn-style;
+//   color: red;
+// }
+// .btn-black {
+//   @extend %btn-style;
+//   color: black;
+// }
+@use "defalut";
+body {
+  .box-green {
+    // @extend %box-size;
+    @include defalut.box_size(width, 200px, 20px, green);
+    // background-color: green;
+  }
+  .box-blue {
+    // @extend %box-size;
+    @include defalut.box_size(width, 100px, 20px, blue);
+    // background-color: blue;
+  }
+  .box-red {
+    // @extend %box-size;
+    @include defalut.box_size(width, 50px, 20px, red);
+    // background-color: red;
+  }
+}

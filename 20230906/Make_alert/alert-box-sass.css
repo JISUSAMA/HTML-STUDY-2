@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.style-alert-box-yellow p, .style-alert-box-blue p, .style-alert-box-green p {
+  margin: 0;
+  display: inline-block;
+  justify-items: left;
+}
+
+.style-alert-box-green {
+  margin: 5px;
+  border-radius: 5px;
+  width: auto;
+  height: 50px;
+  background-color: rgba(127, 206, 74, 0.322);
+  color: rgb(36, 116, 36);
+}
+.style-alert-box-green .style-text-box {
+  padding-left: 19px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.style-alert-box-blue {
+  margin: 5px;
+  border-radius: 5px;
+  width: auto;
+  height: 50px;
+  background-color: rgba(74, 186, 206, 0.322);
+  color: rgb(41, 36, 116);
+}
+.style-alert-box-blue .style-text-box {
+  padding-left: 19px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.style-alert-box-yellow {
+  margin: 5px;
+  border-radius: 5px;
+  width: auto;
+  height: 50px;
+  background-color: rgba(197, 206, 74, 0.322);
+  color: rgb(116, 115, 36);
+}
+.style-alert-box-yellow .style-text-box {
+  padding-left: 19px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}/*# sourceMappingURL=alert-box-sass.css.map */

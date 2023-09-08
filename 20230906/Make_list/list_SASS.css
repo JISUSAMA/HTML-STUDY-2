@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 10px;
+}
+
+.list-bg .list-item {
+  width: 350px;
+  height: 50px;
+  padding: 0px 0;
+  border: 1px solid rgb(165, 165, 165);
+}
+.list-bg .text-aline {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 0px;
+  font-size: large;
+  font-weight: bold;
+}
+.list-bg .list-item-active .list-item :active {
+  width: 350px;
+  height: 50px;
+  padding: 0px 0;
+  background-color: steelblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 0px;
+  color: white;
+}/*# sourceMappingURL=list_SASS.css.map */

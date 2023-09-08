@@ -1,0 +1,22 @@
+@keyframes move_title {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(-50px);
+  }
+  60% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.menu-text-title {
+  text-align: center;
+}
+
+.menu-text-title:hover {
+  animation-name: move_title;
+  animation-duration: 2.5s;
+}/*# sourceMappingURL=animation_sass.css.map */

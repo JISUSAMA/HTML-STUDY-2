@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.row .col-4, .row .col-6 {
+  padding-top: 13px;
+  padding-left: 13px;
+}
+
+.row-line {
+  background-color: pink;
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+.row .col-6 {
+  border: 1px solid rgba(216, 112, 147, 0.247);
+  width: 50%;
+  height: 50px;
+}
+.row .col-4 {
+  border: 1px solid rgba(216, 112, 147, 0.247);
+  width: 33.33%;
+  height: 50px;
+}/*# sourceMappingURL=column.css.map */

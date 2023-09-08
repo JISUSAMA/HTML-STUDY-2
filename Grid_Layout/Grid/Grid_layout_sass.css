@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*부모 div 에 
+  display: grid;
+  grid-template-columns: 세로 칸의 갯수와 사이즈 
+  grid-template-rows: 가로 칸의 갯수와 시이즈
+  를 작성해주면 모눈 종이가 완성 된다고 생각하면된다
+
+  1f 단위로 폭지정 : 1배, 전체의 비율 이라고 생각하면 된다
+  grid-gap : 격자간의 간격을 조절 할 수 있다.
+grid-column(row) : 세로선(가로)을 (1~차지할 칸의 갯수)몇칸을 차지하게 할지 
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 5 px;
+  grid-template-areas: "header header header" "side list list " "side list list ";
+}
+
+.grid-container div {
+  border: 1px solid gray;
+}
+
+.grid-nav {
+  grid-area: header;
+}
+
+.grid-side {
+  grid-area: side;
+}
+
+.grid-list {
+  grid-area: list;
+}/*# sourceMappingURL=Grid_layout_sass.css.map */

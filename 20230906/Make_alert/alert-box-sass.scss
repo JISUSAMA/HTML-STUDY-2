@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+div {
+  box-sizing: border-box;
+}
+
+@mixin style-box-desine($b-color, $f-color) {
+  margin: 5px;
+  border-radius: 5px;
+  width: auto;
+  height: 50px;
+  background-color: $b-color;
+  color: $f-color;
+}
+@mixin make-padding-size($left, $right, $top, $bottom) {
+  padding-left: $left;
+  padding-right: $right;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+%make-text-p {
+  margin: 0;
+  display: inline-block;
+  justify-items: left;
+}
+.style-alert-box-green {
+  p {
+    @extend %make-text-p;
+  }
+  @include style-box-desine(rgba(127, 206, 74, 0.322), rgb(36, 116, 36));
+  .style-text-box {
+    @include make-padding-size(19px, 10px, 10px, 0px);
+  }
+}
+.style-alert-box-blue {
+  p {
+    @extend %make-text-p;
+  }
+  @include style-box-desine(rgb(74, 186, 206, 0.322), rgb(41, 36, 116));
+  .style-text-box {
+    @include make-padding-size(19px, 10px, 10px, 0px);
+  }
+}
+.style-alert-box-yellow {
+  p {
+    @extend %make-text-p;
+  }
+  @include style-box-desine(rgba(197, 206, 74, 0.322), rgb(116, 115, 36));
+  .style-text-box {
+    @include make-padding-size(19px, 10px, 10px, 0px);
+  }
+}
