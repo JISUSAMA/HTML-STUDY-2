@@ -30,9 +30,6 @@ div {
   padding-left: 70px;
 }
 
-.menu-bar-2-left img {
-  font-size: 25px;
-}
 .menu-bar-2-left .search {
   display: flex;
   background-color: white;
@@ -56,13 +53,9 @@ div {
   height: 100%;
 }
 
-.menu-bar-2-right i {
-  float: right;
-}
-
 .dashboard-bg {
   padding-left: 70px;
-  background-color: lightgray;
+  background-color: rgb(238, 238, 238);
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -76,12 +69,22 @@ div {
   background-color: #ffffff;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.2fr;
+  box-shadow: 2px 2px 2px lightgrey;
 }
 
 .Dashboard-card-grup {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Dashboard-card-left {
+  margin-left: 10px;
+}
+
+.Dashboard-card-rigth {
+  margin: 30px 18px;
+  float: right;
 }
 
 .Dashboard-card-line-skyblue {
@@ -114,4 +117,37 @@ div {
   background-color: yellow;
   border-radius: 10px;
   margin-right: 20px;
+}
+
+.Second {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.Earnings-card-bg {
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(211, 211, 211, 0.534);
+  margin-right: 20px;
+}
+
+.card-title-bg {
+  background-color: rgba(211, 211, 211, 0.534);
+  padding: 12px;
+  border: 1px solid rgba(211, 211, 211, 0.534);
+}
+
+.card-bg {
+  height: 350px;
+  background-color: white;
+}
+
+.Tasks-card-bg ul {
+  margin: 0;
+  border: 1px solid rgba(211, 211, 211, 0.534);
+  height: 40px;
+  background-color: white;
+  padding-left: 20px;
+  padding-top: 20px;
 }/*# sourceMappingURL=adnim_page.css.map */

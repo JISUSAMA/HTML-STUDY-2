@@ -4,6 +4,7 @@ body {
 div {
   box-sizing: border-box;
 }
+$base-gray-color: rgba(211, 211, 211, 0.534);
 .menu-bar-1 {
   position: fixed;
   z-index: 3;
@@ -27,13 +28,10 @@ div {
   padding-left: 70px;
 }
 .menu-bar-2-left {
-  img {
-    font-size: 25px;
-  }
   .search {
     display: flex;
     background-color: white;
-    border: 1px solid rgba(211, 211, 211, 0.534);
+    border: 1px solid $base-gray-color;
     border-radius: 6px;
     overflow: hidden;
     height: 45px;
@@ -53,11 +51,6 @@ div {
     }
   }
 }
-.menu-bar-2-right {
-  i {
-    float: right;
-  }
-}
 @mixin card-bg-color($bg) {
   width: auto;
   height: 100px;
@@ -67,7 +60,7 @@ div {
 
 .dashboard-bg {
   padding-left: 70px;
-  background-color: lightgray;
+  background-color: rgb(238, 238, 238);
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -77,11 +70,19 @@ div {
   transform: translateX(10px);
   @include card-bg-color(#ffffff);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.2fr;
+  box-shadow: 2px 2px 2px lightgrey;
 }
 .Dashboard-card-grup {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Dashboard-card-left {
+  margin-left: 10px;
+}
+.Dashboard-card-rigth {
+  margin: 30px 18px;
+  float: right;
 }
 .Dashboard-card-line-skyblue {
   @include card-bg-color(skyblue);
@@ -98,4 +99,32 @@ div {
 .Dashboard-card-line-yellow {
   @include card-bg-color(yellow);
   margin-right: 20px;
+}
+.Second {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.Earnings-card-bg {
+  background-color: white;
+  box-shadow: 2px 2px 2px $base-gray-color;
+  margin-right: 20px;
+}
+.card-title-bg {
+  background-color: $base-gray-color;
+  padding: 12px;
+  border: 1px solid $base-gray-color;
+}
+.card-bg {
+  height: 350px;
+  background-color: white;
+}
+.Tasks-card-bg ul {
+  margin: 0;
+  border: 1px solid $base-gray-color;
+  height: 40px;
+  background-color: white;
+  padding-left: 20px;
+  padding-top: 20px;
 }
